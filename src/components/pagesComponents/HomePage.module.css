@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Varela+Round&display=swap');
+
 .container {
     width: 100%;
     height: 90vh;
@@ -5,44 +7,46 @@
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-size: cover  ;
+    font-family: 'Nova Square', sans-serif;
 }
 
 .content {
     width: auto;
-    margin-left: 50px;
+    margin-left: 150px;
 }
 
 .content h1 {
     justify-content: center;
     align-items: center;
-    font-size: 90px;
-    height: 60px;
+    font-size: 100px;
     font-weight: 50;
-    color: black;
+    color: #ffffff;
 }
 
-.content p {
+.content h3 {
+    width: 550px;
     padding: 0;
     font-size: 40px;
     font-weight: lighter;
-    color: black;
+    color: #e7bebe;
 }
 
 .content button {
+    margin-top: 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     justify-content: center;
     background-color: #121619;
-    height: 50px;
-    width: 180px;
+    height: 70px;
+    width: 550px;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 28px;
+    font-family: 'Nova Square', sans-serif;
 }
 
 .content button:hover {
@@ -51,47 +55,65 @@
     transition: 0.3s ease-in;
 }
 
-@media only screen and (max-width: 650px) {
-    .container {
-        justify-content: center;
+
+
+@media only screen and (max-width: 1450px) {
+    .content{
+        margin: 50px;
+        padding-top: 100px ;
         align-items: center;
-    }
-    .content h1,
-    .content p {
     }
 
-    .content {
-        margin-left: 0;
-        border-radius: 10px;
-        padding: 10px;
-        width: 80%;
-        display: flex;
-        justify-content: center;
+    .content h1 {
+        font-size: 60px;
+    }
+
+    .content h3 {
+        width: 400px;
+        font-size: 40px;
+    }
+
+    .content button{
+        width: 350px ;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .content{
+        margin: 20px;
+        padding-top: 200px ;
         align-items: center;
-        flex-direction: column;
-        background-color: #121619;
-        color: white;
     }
 
     .content h1 {
         font-size: 40px;
-        height: 30px;
-        color: white;
     }
 
-    .content p {
-        font-size: 30px;
-        color: white;
+    .content h3 {
+        width: 250px;
+        font-size: 24px;
     }
 
-    .content button {
-        background-color: white;
-        color: #121619;
-        margin-bottom: 30px;
+    .content button{
+        width: 200px ;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .content{
+        margin: 10px;
+        padding-top: 200px ;
+        align-items: center;
     }
 
-    .content button:hover {
-        background-color: rgb(225, 225, 225);
-        color: #121619;
+    .content h1 {
+        font-size: 36px;
     }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+
 }
