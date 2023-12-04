@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./HomePage.module.css";
-import homeBackground from "../../images/homeBackground.jpg";
 
 const HomePage = () => {
   return (
     <div
       className={styles.container}
-      style={{ backgroundImage: `url(${homeBackground})` }}
+      style={{ backgroundImage: `url(/images/homeBackground.jpg)` }}
     >
       <div className={styles.content}>
         <h1>Sushi-Boss</h1>

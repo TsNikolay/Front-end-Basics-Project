@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../images/logo.png";
 import styles from "./Navbar.module.css";
 const Navbar = () => {
   const navRef = useRef(null);
@@ -12,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className={styles.navbar}>
-      <img src={logo} alt="" />
+      <img src="/images/logo.png" alt="" />
       <div className={styles.links} ref={navRef}>
         <Link to="/">Home</Link>
         <Link to="/menu">Menu</Link>

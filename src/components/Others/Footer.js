@@ -23,7 +23,10 @@ const Footer = () => {
           <FaYoutube />
         </Link>
       </div>
+        <div className={styles.info}>
+        <p>The pictures of food were taken from "https://sushi-point.com.ua" website</p>
       <p>&copy; 2023 SushiBoss</p>
+        </div>
     </div>
   );
 };
