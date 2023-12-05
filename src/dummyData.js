@@ -34,7 +34,7 @@ const sushiList = [
   {
     id: 5,
     title: "Rainbow Roll",
-    description: "California roll, assorted sashimi on top",
+    description: "California roll, assorted sashimi on top, salmon",
     weight: "210g",
     price: 18.99,
     image: "images/sushi5.png",

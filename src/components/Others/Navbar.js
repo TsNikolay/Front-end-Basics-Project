@@ -13,10 +13,18 @@ const Navbar = () => {
     <div className={styles.navbar}>
       <img src="/images/logo.png" alt="" />
       <div className={styles.links} ref={navRef}>
-        <Link to="/">Home</Link>
-        <Link to="/menu">Menu</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contacts">Contacts</Link>
+        <Link to="/" onClick={showNavbar}>
+          Home
+        </Link>
+        <Link to="/menu" onClick={showNavbar}>
+          Menu
+        </Link>
+        <Link to="/about" onClick={showNavbar}>
+          About
+        </Link>
+        <Link to="/contacts" onClick={showNavbar}>
+          Contacts
+        </Link>
         <button
           className={`${styles.navBtn} ${styles.navCloseBtn}`}
           onClick={showNavbar}
