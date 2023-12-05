@@ -64,6 +64,7 @@ img{
          gap: 1.5rem;
          background-color: #2a2b31;
          transition: 1s;
+         z-index: 999;
     }
 
     .links a {

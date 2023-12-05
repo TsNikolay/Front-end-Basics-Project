@@ -76,3 +76,45 @@ const sushiList = [
 export function getAllProducts() {
   return sushiList;
 }
+
+const aboutData = [
+  {
+    blockLayoutNumber: 1,
+    imgSrc: "/images/about1.jpg",
+    title: "Welcome",
+    content:
+      "Welcome to SushiBoss - a culinary haven where artistry meets tradition, and every bite tells a story. Nestled in the heart of Kyiv, our sushi restaurant takes you on an exquisite journey through the delicate flavors and meticulous craftsmanship of Japanese cuisine.",
+  },
+  {
+    blockLayoutNumber: 2,
+    imgSrc: "/images/about2.jpg",
+    title: "The art of cook",
+    content:
+      "Our chefs, masters of their craft, skillfully blend the finest ingredients to create a symphony of tastes that dance on your palate. From the pristine waters of the Pacific to the vibrant markets of Tokyo, each element is carefully sourced to ensure the highest quality .",
+  },
+  {
+    blockLayoutNumber: 1,
+    imgSrc: "/images/about3.jpg",
+    title: "Elevating Japanese elegance",
+    content:
+      "The tranquil surroundings provide the perfect backdrop for savoring our extensive menu, which boasts a diverse selection of sushi and sashimi, expertly crafted rolls, and innovative fusion creations that push the boundaries of traditional Japanese fare.",
+  },
+  {
+    blockLayoutNumber: 2,
+    imgSrc: "/images/about4.jpg",
+    title: "Guiding culinary journeys",
+    content:
+      "Dedicated to providing an inclusive culinary experience, our menu caters to both seasoned sushi enthusiasts and those venturing into the world of Japanese cuisine for the first time. Our staff is passionate about guiding you through the menu, helping you explore new flavors and find the perfect pairing from our curated selection.",
+  },
+  {
+    blockLayoutNumber: 1,
+    imgSrc: "/images/about5.jpg",
+    title: "Unforgettable dining experiences",
+    content:
+      "Whether you're seeking a romantic evening, a family celebration, or a corporate gathering, SushiBoss is the ideal destination. Our commitment to exceptional service, coupled with the enchanting flavors of our dishes, ensures that every visit is a memorable occasion.",
+  },
+];
+
+export function getAllAboutData() {
+  return aboutData;
+}

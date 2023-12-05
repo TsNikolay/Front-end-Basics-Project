@@ -1,0 +1,159 @@
+.block{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+    width: auto;
+    position: relative;
+    max-width: 100%;
+}
+
+.block1 img{
+    order:2;
+    right: 7%;
+}
+
+.block1 .additionalImage {
+    order: 1;
+    left: 7%;
+    justify-content: start;
+}
+
+.block2 img{
+    order:1;
+    left: 7%;
+}
+
+.block2 .additionalImage{
+    order:2;
+    right: 7%;
+    justify-content: end    ;
+}
+
+.block img{
+    width:400px;
+    height:100%;
+    z-index: 3;
+    position: relative;
+    object-fit: contain;
+    top:-5rem  ;
+
+}
+
+.additionalImage{
+    text-align: center  ;
+    width: 700px;
+    height: fit-content;
+    background-color: #d1d7dd;;
+    position: relative;
+    padding: 20px 50px 50px 20px;
+}
+
+
+.block p{
+    width: 75%;
+    z-index: 4;
+    color: black;
+    margin-top: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.block h1{
+    width: 75%;
+    z-index: 5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1200;
+    font-size: 2rem;
+
+}
+
+.block1 h1{
+    text-align: start;
+    margin: 25px auto 0 0;
+    padding:  0 30px 0 0 ;
+}
+.block2 h1{
+    text-align: end;
+    margin: 25px  0 0 auto;
+    padding:  0 0 0 30px;
+}
+
+.block1 p{
+    padding:  0 30px 0 0 ;
+    margin-right: auto;
+    text-align: end;
+}
+
+.block2 p{
+    text-align: start;
+    margin-left: auto;
+    padding:  0 0 0 30px;
+}
+
+
+@media only screen and (max-width: 980px) {
+    .block{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0 50px 0;
+        width: auto;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .additionalImage{
+        text-align: center  ;
+        width: 100%;
+        height: fit-content;
+        background-color: #d1d7dd;;
+        position: relative;
+        padding:  30px;
+        order: 2;
+    }
+
+    .block1 .additionalImage {
+        left: 0;
+        justify-content: start;
+    }
+
+    .block2 .additionalImage{
+        right: 0;
+        justify-content: end    ;
+    }
+
+    .block img{
+        order:1;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .block1 img{
+        top: 0;
+        right: 0;
+    }
+    .block2 img{
+        top: 0;
+        left: 0;
+    }
+
+    .block p{
+        margin-top: 50px   ;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .block h1{
+        font-size: 1.3rem;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+}

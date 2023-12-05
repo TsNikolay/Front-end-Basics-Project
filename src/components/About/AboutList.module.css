@@ -1,0 +1,13 @@
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d3e47;
+    flex-direction: column;
+    padding-top: 100px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 980px) {
+    .list{padding-top: 20px;}
+}
